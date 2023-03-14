@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Rueda</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="card mat-card" id="first-card" style="padding: 5px;">
+        <div id="info" class="img-head">
+            <img src="./img/pexels-pixabay-41950.jpg" class="img-fluid" alt="imagen_fondo">
+        <div id="info" style="padding: 10px;">
+            <div id="info-img"></div>
+                <img src="./img/photo_2023-03-13_22-46-40.jpg" class="img-thumbnail" alt="">
+                <div class="btn-edit first-edit"><a href="#" class="btn-right"><i class="bi bi-pen"></i></a></div>          
+    </div>
+    <!--Logos-->
+    <div id="logos">
+        <img src="./img/M-D-P-Arg.png" class="rounded float-end" style="margin-top:95px; width:135px; height:40px; margin-block-end: -400px;" alt="">
+        <img src="./img/arg-programa.png" class="rounded float-end" style="margin-top:-30px; width:135px; height:40px; margin-block-end: -400px;" alt="">
+        <img src="./img/inti.png" class="rounded float-end" style="margin-top:30px; width:135px; height:40px;" alt="">
+    </div> 
+    <div id="informacion">
+        <p class="black";> <h1>Alejandro Rueda</h1></p>     
+        <p> <h4>Desarrollador web full stack Jr.</h4></p>
+    </div>
+    <div id="contacto">
+        <span>Buenos Aires, Argentina</span> 
+        <span><a href="#" class="link-primary">Informacion de contacto</a></span>
+    </div>
+        <div id="botones" style="margin-left: 20px;">
+            <button type="button" class="btn btn-primary">Intereses</button>
+            <button type="button" class="btn btn-primary">Añadir Sección</button>
+            <button type="button" class="btn btn-primary">Más</button>
+        </div>
+    </div>
+    </div>
+    <!--Acerca de mi-->
+    <div class="card next-card" id="acerca-card">
+        <div  id="Acerca" style="padding-left: 10px; color:black">
+            <p>  <h3>Acerca de</h3> </p>
+            <p> <span>Venezolano Viviendo en Argentina desde el 2018, Actualmente trabajando como SysAdmin en una empresa de hosting </span></p>
+        </div>
+    </div>
+      <!--Experiencia-->
+      <div class="card next-card" id="first-card">
+        <div id="Experiencia" style="padding:10px; color:black">
+            <p> <h3>Experiencia</h3> </p>
+            <div class="btn-more"><a href="#" class="btn-right"><i class="bi bi-plus-circle"></i></a></div> 
+        </div> 
+        <div id="Trabajo" style="padding:40px; color:black; margin-left: 80px; margin-top:-50px;"alt="">    
+            <p> <h5>Th Soluciones</h5></p>
+            <p id="text-trabajo">SysAdmin y soporte IT empresa de hosting
+        <span><h6>2019-actualidad </h6></span>
+             <div class="btn-edit-2" onclick="cambiar_parrafo()"><a href="#" class="btn-right"><i class="bi bi-pen"></i></a></div>
+             <div class="btn-trash"><a href="#" class="btn-right"><i class="bi bi-trash-fill"></i></a></div>
+        </div>
+            <div>
+                <input id="edit-trabajo" type="text" oninput="myFuction2(this.value)" style="display:none">
+            </div>
+            <script>
+                //funcion que
+                //cambia el estilo del input a visible
+                //toma el valor del texto del parrafo con id "Trabajo"
+                //lo muestra por consola
+                function cambiar_parrafo(){
+                    document.getElementById("edit-trabajo").style.display="block";
+                    let texto = document.getElementById("text-trabajo").innerText;
+                    console.log(texto);
+                };
+        
+                function myFuction2(valor){
+                    document.getElementById("text-trabajo").innerText=valor;
+                };
+
+                function logMessage(message) {
+                    console.log(message + "<br>");
+                }
+                  </script>
+        
+<div>
+    <img src="./img/Captura de pantalla 2023-03-13 232956.png" class="rounded float-start logo" alt="">
+</div>  
+    </div>
+</div>
+</body>
+</html>
